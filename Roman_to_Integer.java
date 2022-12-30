@@ -31,11 +31,11 @@ public class Roman_to_Integer {
                     }
                     else
                     {
-                        if(s.charAt(i+1) == 'X' || s.charAt(i+1) == 'V')        // if the successor is bigger
+                        if(s.charAt(i+1) == 'X' || s.charAt(i+1) == 'V')        // if the successor is bigger then value will be substracted
                         {
                             num -= 1;
                         }
-                        else
+                        else                                                    // else the value will be added
                         {
                             num += 1;
                         }
