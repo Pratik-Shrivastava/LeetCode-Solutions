@@ -1,3 +1,23 @@
+// Intuition
+// After reading the problem, I find that we need to check two things:
+
+// Whether the number is positive or negative.
+// Whether the reversed number is greater than INTEGER range.
+// Approach
+// We will work on the "Ones place" of number i.e. the last digit.
+// Suppose the number is 321, we need to follow the following steps:
+
+// Make a long integer num initialized with 0. (long num = 0).
+// Store the ones place of "321" in variable r. (int r = num%10).
+// Multiply num by 10. (num *= 10).
+// Add the remainder r to num. (num += r).
+// Divide "321" by 10. Then it will become "32". (x /= 10).
+// Continue the above steps untill x becomes 0.
+// Complexity
+// Time complexity: O(n) (Where n is the total no. of digits)
+// Space complexity: O(1)
+
+
 public class Reverse_Integer
 {
     public static void main(String[] args) {
