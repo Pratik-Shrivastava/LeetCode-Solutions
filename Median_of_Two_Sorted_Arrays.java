@@ -17,7 +17,7 @@ public class Median_of_Two_Sorted_Arrays {
 
         int i = 0;                      // i will point to num1.
         int j = 0;                      // j will point to num2.
-        int k = 0;
+        int k = 0;                      // k will point to res.
 
         while(i < n1 && j < n2)       // while num1 and num2 has elements.
         {
